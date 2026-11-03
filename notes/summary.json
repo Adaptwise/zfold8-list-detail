@@ -1,0 +1,85 @@
+{
+  "models": {
+    "segment": "sam-3.1",
+    "diagnose": "muse-spark-1.3"
+  },
+  "note": "Noun-phrase SAM prompts returned no boxes on this dark UI. A point on a bright pixel did. Muse Spark named the regions, and SAM then segmented those boxes.",
+  "shots": [
+    {
+      "name": "cover-device-before",
+      "image": "shots/cover-before.png",
+      "size": [
+        1248,
+        1972
+      ],
+      "failures": [
+        {
+          "element": "Detail placeholder Select an item",
+          "defect": "Shown beside the list on a phone-width cover.",
+          "fix": "Use one pane on a compact width and open the detail on tap."
+        }
+      ],
+      "samBoxes": [
+        {
+          "name": "list",
+          "x1": 0,
+          "y1": 48,
+          "x2": 605,
+          "y2": 1321
+        },
+        {
+          "name": "detail placeholder",
+          "x1": 813,
+          "y1": 1002,
+          "x2": 1086,
+          "y2": 1039
+        }
+      ]
+    },
+    {
+      "name": "cover-host-after",
+      "image": "shots/cover-after.png",
+      "size": [
+        1223,
+        1935
+      ],
+      "failures": [],
+      "observed": "One column. Muse Spark reported no layout failure."
+    },
+    {
+      "name": "flat-device",
+      "image": "shots/flat.png",
+      "size": [
+        2448,
+        1848
+      ],
+      "failures": [],
+      "observed": "Two panes. That count is right for a wide unfolded screen. The boxes came back on a 0-1000 grid, not source pixels."
+    },
+    {
+      "name": "tabletop-host-before",
+      "image": "shots/tabletop-before.png",
+      "size": [
+        1927,
+        2552
+      ],
+      "failures": [
+        {
+          "element": "detail pane",
+          "defect": "Side by side with the list. A tabletop detail should sit below the horizontal fold.",
+          "fix": "Stack the panes across the horizontal hinge."
+        }
+      ]
+    },
+    {
+      "name": "book-host-before",
+      "image": "shots/book-before.png",
+      "size": [
+        2552,
+        1927
+      ],
+      "failures": [],
+      "observed": "Two panes, which is the right count. The still does not show a hinge gap. A 45 degree fold on the Z Fold 8 is outside Samsung Flex mode (75-115), so the phone does not report that pose as half-open."
+    }
+  ]
+}

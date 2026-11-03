@@ -1,0 +1,38 @@
+[
+  {
+    "name": "flat-device",
+    "status": 200,
+    "size": [
+      2448,
+      1848
+    ],
+    "text": "{\"failures\":[],\"boxes\":[{\"name\":\"list pane\",\"x1\":0,\"y1\":50,\"x2\":450,\"y2\":980},{\"name\":\"detail pane\",\"x1\":450,\"y1\":50,\"x2\":1000,\"y2\":980}]}"
+  },
+  {
+    "name": "tabletop-host-before",
+    "status": 200,
+    "size": [
+      1927,
+      2552
+    ],
+    "text": "{\"failures\":[{\"element\":\"two-pane layout in Tabletop posture\",\"defect\":\"detail pane placed side by side with list instead of split above and below horizontal fold\",\"fix\":\"stack panes vertically with content on top half and controls on bottom half across horizontal hinge\"}],\"boxes\":[{\"name\":\"list_pane\",\"x1\":0,\"y1\":0,\"x2\":486,\"y2\":1000},{\"name\":\"detail_pane\",\"x1\":486,\"y1\":0,\"x2\":1000,\"y2\":1000}]}"
+  },
+  {
+    "name": "book-host-before",
+    "status": 200,
+    "size": [
+      2552,
+      1927
+    ],
+    "text": "{\"failures\":[],\"boxes\":[{\"name\":\"left list pane\",\"x1\":0,\"y1\":0,\"x2\":371,\"y2\":1000},{\"name\":\"right detail pane\",\"x1\":397,\"y1\":0,\"x2\":1000,\"y2\":1000}]}"
+  },
+  {
+    "name": "cover-host-after",
+    "status": 200,
+    "size": [
+      1223,
+      1935
+    ],
+    "text": "{\"failures\":[],\"boxes\":[{\"name\":\"single_column_pane\",\"x1\":0,\"y1\":0,\"x2\":1223,\"y2\":1935}]}"
+  }
+]
